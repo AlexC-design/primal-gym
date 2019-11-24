@@ -1,22 +1,108 @@
 body {
+  font-family: "Ubuntu";
   margin: 0px;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 45%;
+  padding: 2em;
+  margin: 0;
+  font-size: 1.25em;
+}
+
+.navbar ul li {
+  list-style-type: none;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar .flex-eq {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 202px 0 0;
+}
+
+.navbar .btn-login {
+  margin: auto 4em auto 0;
+  border-radius: 0.2em;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background: transparent;
+  height: 47px;
+  line-height: 40px;
+  border: 1px solid white;
+  display: block;
+  float: none;
+  text-align: center;
+  width: 122px;
+  font-family: "Ubuntu";
+  font-size: 1.25em;
+  color: #ff0000;
 }
 
 .landing-page {
   height: 100vh;
-  background-color: darkgray;
+  background-color: #161515;
+}
+
+.landing-page h1 {
+  text-align: center;
+  padding-top: 55vh;
+  margin: 0;
+  font-size: 2.8em;
+  color: white;
+  font-weight: normal;
+}
+
+.landing-page .btn-join-main {
+  margin: 1.2em auto;
+  border-radius: 0.2em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: transparent;
+  height: 115px;
+  line-height: 40px;
+  border: 2px solid #ff0000;
+  display: block;
+  float: none;
+  text-align: center;
+  width: 720px;
+  font-family: "Ubuntu";
+  font-size: 3.5em;
+  color: #ff0000;
 }
 
 .logo {
   position: absolute;
-  top: calc(50% - 114px*2);
+  top: calc(50% - 114px* 2);
   left: calc(50% - 167px/ 2);
   mix-blend-mode: screen;
 }
 
 .logotype {
   position: absolute;
-  top: calc(50% - 125px/2);
+  top: calc(50% - 125px/ 2);
   left: calc(50% - 310px/ 2);
 }
 /*# sourceMappingURL=style.css.map */
