@@ -1,0 +1,22 @@
+body {
+  margin: 0px;
+}
+
+.landing-page {
+  height: 100vh;
+  background-color: darkgray;
+}
+
+.logo {
+  position: absolute;
+  top: calc(50% - 114px*2);
+  left: calc(50% - 167px/ 2);
+  mix-blend-mode: screen;
+}
+
+.logotype {
+  position: absolute;
+  top: calc(50% - 125px/2);
+  left: calc(50% - 310px/ 2);
+}
+/*# sourceMappingURL=style.css.map */
