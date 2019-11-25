@@ -12,6 +12,7 @@ const LandingPage = () => {
       <Logotype />
       <h1>Where fitness comes naturally</h1>
       <button className="btn-join-main">Join Now</button>
+      <div className='bg-image container'></div>
     </div>
   );
 };

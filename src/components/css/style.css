@@ -3,13 +3,17 @@ body {
   margin: 0px;
 }
 
+.container {
+  max-width: 1920px;
+  margin: auto;
+}
+
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .navbar ul {
@@ -38,11 +42,11 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 202px 0 0;
+  padding: 0 122px 0 0;
 }
 
 .navbar .btn-login {
-  margin: auto 4em auto 0;
+  margin: auto 0;
   border-radius: 0.2em;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
@@ -61,15 +65,21 @@ body {
 }
 
 .landing-page {
+  background-image: url("../../assets/images/landing-bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: contain;
+  margin: auto;
   height: 100vh;
-  background-color: #161515;
+  background-color: black;
 }
 
 .landing-page h1 {
   text-align: center;
-  padding-top: 55vh;
+  padding-top: 50vh;
   margin: 0;
-  font-size: 2.8em;
+  font-size: 2em;
   color: white;
   font-weight: normal;
 }
@@ -81,15 +91,15 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   background: transparent;
-  height: 115px;
+  height: 90px;
   line-height: 40px;
   border: 2px solid #ff0000;
   display: block;
   float: none;
   text-align: center;
-  width: 720px;
+  width: 620px;
   font-family: "Ubuntu";
-  font-size: 3.5em;
+  font-size: 2em;
   color: #ff0000;
 }
 

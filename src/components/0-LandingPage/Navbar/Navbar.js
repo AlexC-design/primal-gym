@@ -3,7 +3,7 @@ import "../../css/style.css";
 
 const Navbar = () => {
   return (
-    <div className="navbar">
+    <div className="navbar container">
       <div className="flex-eq"></div>
       <ul>
         <li>
