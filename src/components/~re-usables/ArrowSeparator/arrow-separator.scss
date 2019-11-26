@@ -1,0 +1,30 @@
+.container {
+    max-width: 90%;
+}
+
+.arrows {
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow-body {
+  max-height: 4px;
+  max-width: 600px;
+}
+
+.arrow-right {
+  .arrow-head-1 {
+    transform: scaleX(-1);
+  }
+}
+
+.page-title {
+  color: white;
+  font-size: 3.5em;
+}

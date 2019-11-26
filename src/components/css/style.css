@@ -8,15 +8,47 @@ body {
   margin: auto;
 }
 
-.navbar {
+.navbg-large {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 5.25em;
+  z-index: 1;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbg-small {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 3em;
+  z-index: 1;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.large {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  position: fixed;
+  left: 0;
+  right: 0;
+  padding: 0;
+  width: 100%;
+  z-index: 2;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
-.navbar ul {
+.large ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,25 +59,29 @@ body {
   padding: 2em;
   margin: 0;
   font-size: 1.25em;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
-.navbar ul li {
+.large ul li {
   list-style-type: none;
 }
 
-.navbar ul li a {
+.large ul li a {
   text-decoration: none;
   color: white;
 }
 
-.navbar .flex-eq {
+.large .flex-eq {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 0 122px 0 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
-.navbar .btn-login {
+.large .btn-login {
   margin: auto 0;
   border-radius: 0.2em;
   -webkit-box-pack: end;
@@ -64,10 +100,70 @@ body {
   color: #ff0000;
 }
 
+.small {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: fixed;
+  left: 0;
+  right: 0;
+  padding: 0;
+  width: 100%;
+  z-index: 2;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.small ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 35%;
+  padding: 1em;
+  margin: 0;
+  font-size: 1em;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.small ul li {
+  list-style-type: none;
+}
+
+.small ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.small .flex-eq {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 50vw 0 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.small .btn-login {
+  background: url("../../assets/images/user-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  font-size: 0;
+  width: 50px;
+  height: auto;
+  margin: 0 10px;
+  padding-right: 100px;
+}
+
 .landing-page {
   background-image: url("../../assets/images/landing-bg.jpg");
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-position: center;
   background-size: contain;
   margin: auto;
@@ -77,7 +173,7 @@ body {
 
 .landing-page h1 {
   text-align: center;
-  padding-top: 50vh;
+  padding-top: 65vh;
   margin: 0;
   font-size: 2em;
   color: white;
@@ -103,16 +199,53 @@ body {
   color: #ff0000;
 }
 
-.logo {
+.logo-large {
   position: absolute;
   top: calc(50% - 114px* 2);
   left: calc(50% - 167px/ 2);
   mix-blend-mode: screen;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  z-index: 3;
+}
+
+.logo-large img {
+  padding: 0;
+  width: 100%;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.logo-small {
+  position: fixed;
+  top: 1px;
+  left: 0px;
+  mix-blend-mode: screen;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  z-index: 3;
+}
+
+.logo-small img {
+  padding: 0.3em 0 0 2em;
+  width: 25%;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .logotype {
   position: absolute;
   top: calc(50% - 125px/ 2);
   left: calc(50% - 310px/ 2);
+}
+
+.classes-page {
+  background-image: url("../../assets/images/classes-page/classes-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin: auto;
+  height: 200vh;
+  background-color: black;
 }
 /*# sourceMappingURL=style.css.map */
