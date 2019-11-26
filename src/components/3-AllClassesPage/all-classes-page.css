@@ -1,0 +1,27 @@
+.all-classes-container {
+  background-color: black;
+}
+
+.classes-cards-container {
+  max-width: 1920px;
+  margin: auto;
+}
+
+.classes-cards-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.classes-cards-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=all-classes-page.css.map */

@@ -1,9 +1,25 @@
-.about-page-background {
+.about-page-container {
   height: 100vh;
   background-color: black;
+  z-index: 1;
 }
 
 .about-columns {
   display: flex;
   justify-content: center;
+  z-index: 1;
+}
+
+.about-page-background {
+  display: flex;
+  position: absolute;
+  z-index: 0;
+
+  img {
+    padding-left: 5em;
+    opacity: 25%;
+    max-width: 600px;
+    max-height: 600px;
+    z-index: 0;
+  }
 }

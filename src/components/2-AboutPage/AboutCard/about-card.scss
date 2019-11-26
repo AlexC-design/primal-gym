@@ -4,15 +4,18 @@ $maxHeight: 70px;
 .about-card {
   display: flex;
   align-items: center;
+  z-index: 1;
 }
 
 .about-card-text {
   color: white;
   max-width: 400px;
+  z-index: 1;
 }
 
 .icon {
   padding: 0 3em;
   width: $maxWidth;
   height: $maxHeight;
+  z-index: 1;
 }

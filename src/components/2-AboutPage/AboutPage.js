@@ -1,5 +1,6 @@
 import React from "react";
 import ArrowSeparator from "../~re-usables/ArrowSeparator/ArrowSeparator";
+import aboutUsBG from "../../assets/images/about-us-bg.jpg";
 import "./about-page.css";
 import AboutCard from "./AboutCard/AboutCard";
 
@@ -18,6 +19,10 @@ const AboutPage = () => {
             <AboutCard number="4" />
             <AboutCard number="5" />
             <AboutCard number="6" />
+          </div>
+          <div className="about-page-background">
+            <img src={aboutUsBG} alt="about-us-bg" />
+            <img src={aboutUsBG} alt="about-us-bg" />
           </div>
         </div>
       </div>
