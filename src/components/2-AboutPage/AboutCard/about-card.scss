@@ -1,0 +1,18 @@
+$maxWidth: 100px;
+$maxHeight: 70px;
+
+.about-card {
+  display: flex;
+  align-items: center;
+}
+
+.about-card-text {
+  color: white;
+  max-width: 400px;
+}
+
+.icon {
+  padding: 0 3em;
+  width: $maxWidth;
+  height: $maxHeight;
+}

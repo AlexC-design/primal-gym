@@ -66,14 +66,14 @@
 
 .text {
   max-width: 500px;
-  padding: 1em;
+  padding: 0 1em 2.5em;
   z-index: 1;
 }
 
 .text h1 {
   font-weight: bolder;
   font-size: 3em;
-  margin-bottom: 1.5em;
+  margin-bottom: 0.8em;
 }
 
 .text h4 {
@@ -94,12 +94,8 @@
   padding-right: 100px;
 }
 
-.class-text-bg {
-  position: absolute;
+.text-and-background {
   background-color: black;
-  width: 100%;
-  height: 700px;
-  z-index: 0;
 }
 
 .classes-page {

@@ -16,7 +16,8 @@
 }
 
 .arrow-body-vertical {
-  max-width: 4px;
+  height: 300px;
+  width: 4px;
   padding-bottom: 3em;
   margin: auto;
 }

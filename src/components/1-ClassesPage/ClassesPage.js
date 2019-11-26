@@ -77,10 +77,11 @@ const ClassesPage = () => {
           <div className="glow-women"></div>
         </div>
       </div>
-      <div className="text-container">
-        {renderTextLeft()}
-        {renderTextRight()}
-        <div className="class-text-bg" />
+      <div className="text-and-background">
+        <div className="text-container">
+          {renderTextLeft()}
+          {renderTextRight()}
+        </div>
       </div>
     </div>
   );

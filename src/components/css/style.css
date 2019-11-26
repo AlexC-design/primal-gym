@@ -14,8 +14,8 @@ body {
   left: 0;
   right: 0;
   top: 0;
-  height: 5.25em;
-  z-index: 1;
+  height: 7em;
+  z-index: 8;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
@@ -27,7 +27,7 @@ body {
   right: 0;
   top: 0;
   height: 3em;
-  z-index: 1;
+  z-index: 8;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
@@ -43,7 +43,7 @@ body {
   right: 0;
   padding: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 9;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
@@ -112,7 +112,7 @@ body {
   right: 0;
   padding: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 9;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }

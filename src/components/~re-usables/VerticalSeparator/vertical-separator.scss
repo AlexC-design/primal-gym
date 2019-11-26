@@ -1,3 +1,5 @@
+$max-height: 300px;
+
 .vertical-arrow {
   display: flex;
   flex-direction: column;
@@ -9,7 +11,8 @@
 }
 
 .arrow-body-vertical {
-  max-width: 4px;
+  height: $max-height;
+  width: 4px;
   padding-bottom: 3em;
   margin: auto;
 }
