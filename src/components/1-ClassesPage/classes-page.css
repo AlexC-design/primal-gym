@@ -1,0 +1,115 @@
+.classes-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1080px;
+  margin: auto;
+}
+
+.glow-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  max-width: 1080px;
+  margin: auto;
+}
+
+.glow-men {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(#fdc660, #ff801700, #ff801700);
+  mix-blend-mode: overlay;
+}
+
+.glow-women {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(#4decf1, #17f0ff00, #17b6ff00);
+  mix-blend-mode: overlay;
+}
+
+.lower-shadow {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 550px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00000000), color-stop(#00000000), to(#000000));
+  background: linear-gradient(#00000000, #00000000, #000000);
+  z-index: 2;
+}
+
+.higher-shadow {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 550px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#000000), color-stop(#00000000), color-stop(#00000000), to(#00000000));
+  background: linear-gradient(#000000, #00000000, #00000000, #00000000);
+  z-index: 0;
+}
+
+.text-container {
+  max-width: 1080px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+}
+
+.text {
+  max-width: 500px;
+  padding: 1em;
+  z-index: 1;
+}
+
+.text h1 {
+  font-weight: bolder;
+  font-size: 3em;
+  margin-bottom: 1.5em;
+}
+
+.text h4 {
+  font-size: 1.2em;
+}
+
+.text p {
+  font-weight: normal;
+}
+
+.right {
+  text-align: left;
+  padding-left: 100px;
+}
+
+.left {
+  text-align: right;
+  padding-right: 100px;
+}
+
+.class-text-bg {
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  height: 700px;
+  z-index: 0;
+}
+
+.classes-page {
+  background-image: url("../../assets/images/classes-page/classes-bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: contain;
+  margin: auto;
+  height: auto;
+  background-color: black;
+}
+/*# sourceMappingURL=classes-page.css.map */

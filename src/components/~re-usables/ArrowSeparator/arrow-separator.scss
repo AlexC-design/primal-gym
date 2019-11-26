@@ -1,10 +1,17 @@
-.container {
-    max-width: 90%;
+.arrows-container {
+  max-width: 1080px;
+  margin: auto;
+  padding: 1em 0 5em;
+
+  img {
+    z-index: 1;
+  }
+
 }
 
 .arrows {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .arrow {
@@ -15,7 +22,6 @@
 
 .arrow-body {
   max-height: 4px;
-  max-width: 600px;
 }
 
 .arrow-right {
@@ -24,7 +30,26 @@
   }
 }
 
-.page-title {
-  color: white;
-  font-size: 3.5em;
+.page-title-fill {
+  h1 {
+    color: white;
+    font-size: 3.5em;
+    padding: 2em;
+  }
+}
+
+.page-title-empty {
+  padding: 0 5em;
+}
+
+.empty {
+  .arrow {
+    .arrow-body {
+      width: 600px;
+    }
+  }
+
+  .page-title {
+    width: 400px;
+  }
 }

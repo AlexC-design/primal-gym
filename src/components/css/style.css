@@ -104,8 +104,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: fixed;
   left: 0;
   right: 0;
@@ -165,7 +166,7 @@ body {
   background-image: url("../../assets/images/landing-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: 1600px auto;
   margin: auto;
   height: 100vh;
   background-color: black;
@@ -237,15 +238,5 @@ body {
   position: absolute;
   top: calc(50% - 125px/ 2);
   left: calc(50% - 310px/ 2);
-}
-
-.classes-page {
-  background-image: url("../../assets/images/classes-page/classes-bg.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  margin: auto;
-  height: 200vh;
-  background-color: black;
 }
 /*# sourceMappingURL=style.css.map */

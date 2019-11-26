@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,UAAU,CAAC;EACP,SAAS,EAAE,MAAM;EACjB,MAAM,EAAE,IAAI;CACb",
-    "sources": [
-        "menclass.scss"
-    ],
-    "names": [],
-    "file": "menclass.css"
-}

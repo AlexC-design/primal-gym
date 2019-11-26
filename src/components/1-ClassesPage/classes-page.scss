@@ -1,0 +1,104 @@
+$maxWidth: 500px;
+
+.classes-container {
+  display: flex;
+  justify-content: center;
+  max-width: 1080px;
+  margin: auto;
+}
+
+.glow-container {
+  display: flex;
+  position: absolute;
+  max-width: 1080px;
+  margin: auto;
+}
+
+.glow-men {
+  width: $maxWidth;
+  height: $maxWidth;
+  background: radial-gradient(#fdc660, #ff801700, #ff801700);
+  mix-blend-mode: overlay;
+}
+
+.glow-women {
+  width: $maxWidth;
+  height: $maxWidth;
+  background: radial-gradient(#4decf1, #17f0ff00, #17b6ff00);
+  mix-blend-mode: overlay;
+}
+
+.lower-shadow {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: $maxWidth + 50px;
+  background: linear-gradient(#00000000, #00000000, #000000);
+  z-index: 2;
+}
+
+.higher-shadow {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: $maxWidth + 50px;
+  background: linear-gradient(#000000, #00000000, #00000000, #00000000);
+  z-index: 0;
+}
+
+.text-container {
+  max-width: 1080px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.text {
+  max-width: $maxWidth;
+  padding: 1em;
+  z-index: 1;
+
+  h1 {
+    font-weight: bolder;
+    font-size: 3em;
+    margin-bottom: 1.5em;
+  }
+
+  h4 {
+    font-size: 1.2em;
+  }
+
+  p {
+    font-weight: normal;
+  }
+}
+
+.right {
+  text-align: left;
+  padding-left: $maxWidth/5;
+}
+
+.left {
+  text-align: right;
+  padding-right: $maxWidth/5;
+}
+
+.class-text-bg {
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  height: 700px;
+  z-index: 0
+}
+
+.classes-page {
+  background-image: url("../../assets/images/classes-page/classes-bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: contain;
+  margin: auto;
+  height: auto;
+  background-color: black;
+}

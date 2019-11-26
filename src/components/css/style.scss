@@ -99,7 +99,7 @@ body {
 
 .small {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   position: fixed;
   left: 0;
   right: 0;
@@ -153,7 +153,7 @@ body {
   background-repeat: no-repeat;
   // background-attachment: fixed;
   background-position: center;
-  background-size: contain;
+  background-size: 1600px auto;
   margin: auto;
   height: 100vh;
   background-color: black;
@@ -221,15 +221,3 @@ body {
   left: calc(50% - #{$logotypeWidth}/ 2);
 }
 
-// --- CLASSES PAGE ---
-
-.classes-page {
-  background-image: url("../../assets/images/classes-page/classes-bg.jpg");
-  background-repeat: no-repeat;
-  // background-attachment: fixed;
-  background-position: center;
-  background-size: contain;
-  margin: auto;
-  height: 200vh;
-  background-color: black;
-}

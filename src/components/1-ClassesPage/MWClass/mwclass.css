@@ -1,0 +1,22 @@
+.men-main {
+  max-width: 600px;
+  position: absolute;
+  z-index: 1;
+}
+
+.men-debris {
+  max-width: 600px;
+  mix-blend-mode: screen;
+}
+
+.women-main {
+  max-width: 600px;
+  position: absolute;
+  z-index: 1;
+}
+
+.women-debris {
+  max-width: 600px;
+  mix-blend-mode: screen;
+}
+/*# sourceMappingURL=mwclass.css.map */

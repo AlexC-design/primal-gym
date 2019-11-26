@@ -1,0 +1,23 @@
+$max-width: 600px;
+
+.men-main {
+  max-width: $max-width;
+  position: absolute;
+  z-index: 1;
+}
+
+.men-debris {
+  max-width: $max-width;
+  mix-blend-mode: screen;
+}
+
+.women-main {
+  max-width: $max-width;
+  position: absolute;
+  z-index: 1;
+}
+
+.women-debris {
+  max-width: $max-width;
+  mix-blend-mode: screen;
+}
