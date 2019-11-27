@@ -5,6 +5,10 @@ $logotypeHeight: 125px;
 
 $main-color: #ff0000;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Ubuntu";
   margin: 0px;
@@ -13,6 +17,10 @@ body {
 .container {
   max-width: 1920px;
   margin: auto;
+}
+
+.current {
+  color: red;
 }
 
 // --- NAVBAR ---
@@ -67,6 +75,36 @@ body {
       a {
         text-decoration: none;
         color: white;
+        position: relative;
+
+        &.current {
+          color: white;
+
+          &:active {
+            &:after {
+              background: red;
+            }
+          }
+        }
+
+        &:after {
+          content: "";
+          position: absolute;
+          left: 0;
+          width: 100%;
+          height: 3px;
+          margin: 1.2em auto 0;
+          background: white;
+
+          transform-origin: right;
+          transform: scaleX(0);
+          transition: transform 0.2s ease-in-out;
+        }
+
+        &:hover::after {
+          transform: scaleX(1);
+          transform-origin: left;
+        }
       }
     }
   }
@@ -123,6 +161,36 @@ body {
       a {
         text-decoration: none;
         color: white;
+        position: relative;
+
+        &.current {
+          color: red;
+
+          &:after {
+            background: red;
+            transform: scaleX(1);
+            transform-origin: left;
+          }
+        }
+
+        &:after {
+          content: "";
+          position: absolute;
+          left: 0;
+          width: 100%;
+          height: 3px;
+          margin: 1.2em auto 0;
+          background: white;
+
+          transform-origin: right;
+          transform: scaleX(0);
+          transition: transform 0.2s ease-in-out;
+        }
+
+        &:hover::after {
+          transform: scaleX(1);
+          transform-origin: left;
+        }
       }
     }
   }
@@ -153,7 +221,7 @@ body {
   background-repeat: no-repeat;
   // background-attachment: fixed;
   background-position: center;
-  background-size: 1600px auto;
+  background-size: 90% auto;
   margin: auto;
   height: 100vh;
   background-color: black;
@@ -220,4 +288,3 @@ body {
   top: calc(50% - #{$logotypeHeight}/ 2);
   left: calc(50% - #{$logotypeWidth}/ 2);
 }
-

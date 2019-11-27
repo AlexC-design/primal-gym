@@ -56,6 +56,13 @@ const renderText = number => {
           <p>Rated as one of the top group workouts in London</p>
         </>
       );
+    default:
+      return (
+        <>
+          <h1>NON EXISTENT</h1>
+          <p>Non existent</p>
+        </>
+      );
   }
 };
 

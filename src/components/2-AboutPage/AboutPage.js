@@ -6,8 +6,8 @@ import AboutCard from "./AboutCard/AboutCard";
 
 const AboutPage = () => {
   return (
-    <div>
-      <div className="about-page-container">
+    <div className="about-page-container">
+      <section id="about">
         <ArrowSeparator title="WHAT WE OFFER" />
         <div className="about-columns">
           <div className="left-column">
@@ -25,7 +25,7 @@ const AboutPage = () => {
             <img src={aboutUsBG} alt="about-us-bg" />
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 };

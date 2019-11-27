@@ -1,5 +1,9 @@
 .class-card-container {
   position: relative;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
 }
 
 .class-border {
@@ -16,23 +20,117 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 4em;
 }
 
-border-top {
-  max-width: 500px;
+.hover-show-button {
+  position: relative;
+  text-align: center;
 }
 
-.class-image {
+.hover-show-button:hover .border-bottom {
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+}
+
+.hover-show-button:hover .btn-class-join {
+  -webkit-transform: translateY(-150px) scaleY(1);
+          transform: translateY(-150px) scaleY(1);
+}
+
+.hover-show-button:hover .class-schedule-overlay {
+  opacity: 100%;
+}
+
+.hover-show-button .class-image {
   position: absolute;
   top: 35px;
   left: 40px;
-  padding: 64px;
 }
 
 .border-bottom {
   margin-top: -25px;
   width: 750px;
   max-height: 4px;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+
+.btn-class-join {
+  margin: 0 auto;
+  border: none;
+  border-radius: 2%;
+  background: red;
+  height: 65px;
+  width: 480px;
+  display: block;
+  float: none;
+  line-height: 40px;
+  text-align: center;
+  font-family: "Ubuntu";
+  font-size: 1.5em;
+  color: white;
+  -webkit-transform: translateY(-150px) scaleY(0);
+          transform: translateY(-150px) scaleY(0);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+
+.class-schedule-overlay {
+  color: white;
+  position: absolute;
+  margin-top: 0.5em;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  background-color: rgba(0, 0, 0, 0.795);
+  opacity: 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.class-schedule-overlay ul {
+  list-style: none;
+  text-align: right;
+  font-size: 2.2em;
+  line-height: 2em;
+}
+
+.class-schedule-overlay .schedule-lists {
+  -ms-flex-item-align: center;
+      align-self: center;
+  justify-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.class-name {
+  color: white;
+  position: absolute;
+  font-size: 4.2em;
+  bottom: 0%;
+  left: 10%;
 }
 /*# sourceMappingURL=class-card.css.map */

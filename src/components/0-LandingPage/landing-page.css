@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Ubuntu";
   margin: 0px;
@@ -6,6 +10,10 @@ body {
 .container {
   max-width: 1920px;
   margin: auto;
+}
+
+.current {
+  color: red;
 }
 
 .navbg-large {
@@ -70,6 +78,40 @@ body {
 .large ul li a {
   text-decoration: none;
   color: white;
+  position: relative;
+}
+
+.large ul li a.current {
+  color: white;
+}
+
+.large ul li a.current:active:after {
+  background: red;
+}
+
+.large ul li a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  margin: 1.2em auto 0;
+  background: white;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+
+.large ul li a:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: left;
+          transform-origin: left;
 }
 
 .large .flex-eq {
@@ -139,6 +181,44 @@ body {
 .small ul li a {
   text-decoration: none;
   color: white;
+  position: relative;
+}
+
+.small ul li a.current {
+  color: red;
+}
+
+.small ul li a.current:after {
+  background: red;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.small ul li a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  margin: 1.2em auto 0;
+  background: white;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+
+.small ul li a:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: left;
+          transform-origin: left;
 }
 
 .small .flex-eq {
@@ -166,7 +246,7 @@ body {
   background-image: url("../../assets/images/landing-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 1600px auto;
+  background-size: 90% auto;
   margin: auto;
   height: 100vh;
   background-color: black;
@@ -239,4 +319,4 @@ body {
   top: calc(50% - 125px/ 2);
   left: calc(50% - 310px/ 2);
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=landing-page.css.map */

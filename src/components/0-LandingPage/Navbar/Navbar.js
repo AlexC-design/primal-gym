@@ -1,12 +1,17 @@
 import React, { useState, useEffect } from "react";
-import "../../css/style.css";
+import navItemsHighlight from "./navItemsHighlight";
 
 const Navbar = ({ scrollPosition }) => {
-
   const [size, setSize] = useState("large");
 
   useEffect(() => {
-    scrollPosition === 0 ? setSize("large") : setSize("small");
+    if (scrollPosition === 0) {
+      setSize("large");
+    } else if (size != "small") {
+      setSize("small");
+    }
+
+    navItemsHighlight(scrollPosition);
   });
 
   return (
@@ -15,19 +20,19 @@ const Navbar = ({ scrollPosition }) => {
         <div className="flex-eq"></div>
         <ul>
           <li>
-            <a href="#">Home</a>
+            <a href="#home">Home</a>
           </li>
           <li>
-            <a href="#">About us</a>
+            <a href="#about">About us</a>
           </li>
           <li>
-            <a href="#">Classes</a>
+            <a href="#classes">Classes</a>
           </li>
           <li>
-            <a href="#">Trainers</a>
+            <a href="#trainers">Trainers</a>
           </li>
           <li>
-            <a href="#">Pricing</a>
+            <a href="#pricing">Pricing</a>
           </li>
         </ul>
         <button className="btn-login">Log In</button>

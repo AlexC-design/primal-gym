@@ -1,11 +1,10 @@
 import React from "react";
 import Logo from "./Logo/Logo";
-import "../css/style.css";
+import "./landing-page.css";
 import Logotype from "./Logotype/Logotype";
 import Navbar from "./Navbar/Navbar";
 
 const LandingPage = ({ scrollPosition }) => {
-  
   return (
     <div className="landing-page">
       <Navbar scrollPosition={scrollPosition} />

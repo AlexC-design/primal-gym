@@ -1,0 +1,135 @@
+// --- TRAINER INFO ---
+
+.trainer-info {
+  padding: 3em 3em;
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  align-items: flex-start;
+  z-index: 1;
+
+  &.reversed {
+    order: 1;
+  }
+
+  h1 {
+    font-size: 3em;
+    color: red;
+    margin: 0 0;
+  }
+  h2 {
+    color: white;
+  }
+  p {
+    color: white;
+  }
+}
+
+.trainer-name-and-spec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.trainer-bot-mid {
+  display: flex;
+  justify-content: center;
+}
+
+.trainer-image {
+  position: relative;
+  z-index: 0;
+
+  &.reversed {
+    order: 2;
+  }
+
+  img {
+    position: absolute;
+    max-width: 500px;
+    max-height: 500px;
+
+    transform: translateY(0);
+    transition: transform 1s ease-in-out;
+  }
+  flex: 1;
+}
+
+.trainer-image.revealed {
+  position: relative;
+
+  img {
+    position: absolute;
+    max-width: 500px;
+    max-height: 500px;
+
+    transform: translateY(-130px);
+    transition: transform 1s ease-in-out;
+  }
+  flex: 1;
+}
+
+.trainer-name {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  & * {
+    padding: 0 20px;
+  }
+}
+
+.trainer-specialization {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  & * {
+    padding: 0 20px;
+  }
+}
+
+// --- TRAINER CARD ---
+
+.trainer-section-container {
+  max-width: 1920px;
+  margin: auto;
+}
+
+.trainer-top-black {
+  background-color: black;
+  width: 100%;
+  height: 50px;
+}
+
+.trainer-bottom-container {
+  display: flex;
+}
+
+.trainer-bot-right {
+  background-color: black;
+  width: 20%;
+}
+
+.trainer-bot-left {
+  background-color: black;
+  width: 20%;
+}
+
+.trainer-below-black {
+  position: relative;
+  background-color: black;
+  width: 100%;
+  height: 200px;
+}
+
+.trainer-section-fill {
+  display: flex;
+  justify-content: space-around;
+}
+
+.trainer-side-fill {
+  background-color: black;
+  background-size: auto;
+  flex-grow: 1;
+}
