@@ -2,6 +2,7 @@ import React from "react";
 import trainersList from "./trainersList";
 import renderTrainerInfo from "./renderTrainerInfo";
 import "./trainer-card.css";
+import borderEdges from "./borderEdges";
 
 const TrainerCard = ({ trainerNumber }) => {
   if (trainerNumber % 2 !== 0) {
@@ -16,6 +17,7 @@ const TrainerCard = ({ trainerNumber }) => {
           <div className="trainer-bottom-container">
             <div className="trainer-bot-left"></div>
             <div className="trainer-bot-mid">
+              {borderEdges()}
               <div className="trainer-image">
                 <img
                   src={trainersList[trainerNumber]}

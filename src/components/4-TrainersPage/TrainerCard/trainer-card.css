@@ -56,6 +56,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
 }
 
 .trainer-image {
@@ -135,6 +136,33 @@
   padding: 0 20px;
 }
 
+.arrow-small-flipped {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+.social-icons-container {
+  position: absolute;
+  bottom: -40px;
+  right: 0;
+  z-index: 2;
+}
+
+.social-icon {
+  position: relative;
+}
+
+.social-icon:hover .social-icon-active {
+  display: block;
+}
+
+.social-icon-active {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
 .trainer-section-container {
   max-width: 1920px;
   margin: auto;
@@ -183,5 +211,38 @@
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+}
+
+.border-edge-top {
+  position: absolute;
+  top: 0;
+  left: -2.5%;
+  width: 105%;
+  max-height: 4px;
+}
+
+.border-edge-bot {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 65%;
+  max-height: 4px;
+  z-index: 1;
+}
+
+.border-edge-left {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 4px;
+  max-height: 80%;
+}
+
+.border-edge-right {
+  position: absolute;
+  right: 0;
+  top: 5%;
+  width: 4px;
+  max-height: 85%;
 }
 /*# sourceMappingURL=trainer-card.css.map */
