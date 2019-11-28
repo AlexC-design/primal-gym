@@ -143,13 +143,27 @@
 
 .social-icons-container {
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   bottom: -40px;
   right: 0;
   z-index: 2;
 }
 
+.social-icons-container.reversed {
+  right: unset;
+  left: 0;
+}
+
+.social-icons-container.reversed .social-icon {
+  margin-right: unset;
+  margin-left: 3.2em;
+}
+
 .social-icon {
   position: relative;
+  margin-right: 3.2em;
 }
 
 .social-icon:hover .social-icon-active {
@@ -230,6 +244,11 @@
   z-index: 1;
 }
 
+.border-edge-bot.reversed {
+  left: unset;
+  right: 0;
+}
+
 .border-edge-left {
   position: absolute;
   left: 0;
@@ -238,11 +257,26 @@
   max-height: 80%;
 }
 
+.border-edge-left.reversed {
+  right: 0;
+  left: unset;
+  bottom: 0;
+  width: 4px;
+  max-height: 85%;
+}
+
 .border-edge-right {
   position: absolute;
   right: 0;
   top: 5%;
   width: 4px;
   max-height: 85%;
+}
+
+.border-edge-right.reversed {
+  left: 0;
+  bottom: 0;
+  width: 4px;
+  max-height: 80%;
 }
 /*# sourceMappingURL=trainer-card.css.map */

@@ -17,7 +17,7 @@ const TrainerCard = ({ trainerNumber }) => {
           <div className="trainer-bottom-container">
             <div className="trainer-bot-left"></div>
             <div className="trainer-bot-mid">
-              {borderEdges()}
+              {borderEdges(trainerNumber)}
               <div className="trainer-image">
                 <img
                   src={trainersList[trainerNumber]}
@@ -45,6 +45,7 @@ const TrainerCard = ({ trainerNumber }) => {
           <div className="trainer-bottom-container">
             <div className="trainer-bot-left"></div>
             <div className="trainer-bot-mid">
+              {borderEdges(trainerNumber)}
               <div className="trainer-image reversed">
                 <img
                   src={trainersList[trainerNumber]}

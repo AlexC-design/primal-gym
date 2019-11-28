@@ -98,13 +98,25 @@
 
 .social-icons-container {
   position: absolute;
+  display: flex;
   bottom: -40px;
   right: 0;
   z-index: 2;
+
+  &.reversed {
+    right: unset;
+    left: 0;
+
+    & .social-icon {
+      margin-right: unset;
+      margin-left: 3.2em;
+    }
+  }
 }
 
 .social-icon {
   position: relative;
+  margin-right: 3.2em;
 
   &:hover .social-icon-active {
     display: block;
@@ -178,6 +190,11 @@
   width: 65%;
   max-height: 4px;
   z-index: 1;
+
+  &.reversed {
+    left: unset;
+    right: 0;
+  }
 }
 
 .border-edge-left {
@@ -186,6 +203,14 @@
   bottom: 0;
   width: 4px;
   max-height: 80%;
+
+  &.reversed {
+    right: 0;
+    left: unset;
+    bottom: 0;
+    width: 4px;
+    max-height: 85%;
+  }
 }
 
 .border-edge-right {
@@ -194,4 +219,11 @@
   top: 5%;
   width: 4px;
   max-height: 85%;
+
+  &.reversed {
+    left: 0;
+    bottom: 0;
+    width: 4px;
+    max-height: 80%;
+  }
 }

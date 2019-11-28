@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,uBAAuB,CAAC;EACtB,gBAAgB,EAAE,KAAK;CACxB;;AAED,AAAA,wBAAwB,CAAC;EACvB,SAAS,EAAE,MAAM;EACjB,MAAM,EAAE,IAAI;EACZ,OAAO,EAAE,IAAI;EACb,OAAO,EAAE,OAAO;CACjB",
+    "sources": [
+        "pricing-page.scss"
+    ],
+    "names": [],
+    "file": "pricing-page.css"
+}
