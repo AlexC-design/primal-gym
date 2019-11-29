@@ -2,11 +2,17 @@ import React, { useEffect } from "react";
 import "./trainers-page.css";
 import ArrowSeparator from "../~re-usables/ArrowSeparator/ArrowSeparator";
 import TrainerCard from "./TrainerCard/TrainerCard";
-import revealImages from "./revealImages";
+import revealImages from "../~re-usables/revealImages";
 
 const TrainersPage = ({ scrollPosition }) => {
   useEffect(() => {
-    revealImages(scrollPosition);
+    revealImages(
+      scrollPosition,
+      ".trainer-section-container",
+      ".trainer-image",
+      400,
+      400
+    );
   });
 
   return (

@@ -1,3 +1,7 @@
+.class-image-container {
+  position: relative;
+}
+
 .men-main {
   max-width: 600px;
   position: absolute;

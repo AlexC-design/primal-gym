@@ -48,10 +48,11 @@
 }
 
 .btn-class-join {
+  border: 2px solid red;
   margin: 0 auto;
-  border: none;
-  border-radius: 2%;
-  background: red;
+
+  border-radius: 5px;
+  background: transparent;
   height: 65px;
   width: 480px;
   display: block;
@@ -66,6 +67,11 @@
   transform-origin: top;
 
   transition: transform 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: red;
+  }
 }
 
 .class-schedule-overlay {

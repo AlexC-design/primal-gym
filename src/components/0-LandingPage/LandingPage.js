@@ -11,7 +11,7 @@ const LandingPage = ({ scrollPosition }) => {
       <Logo scrollPosition={scrollPosition} />
       <Logotype />
       <h1>Where fitness comes naturally</h1>
-      <button className="btn-join-main">Join Now</button>
+      <button className="btn-join-main">JOIN NOW</button>
       <div className="bg-image container"></div>
     </div>
   );

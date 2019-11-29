@@ -24,7 +24,7 @@ class App extends React.Component {
       <div>
         <section id="home">
           <LandingPage scrollPosition={this.state.scroll} />
-          <ClassesPage />
+          <ClassesPage scrollPosition={this.state.scroll} />
         </section>
         <AboutPage />
         <AllClassesPage />

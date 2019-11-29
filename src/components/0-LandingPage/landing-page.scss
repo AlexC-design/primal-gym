@@ -250,6 +250,14 @@ body {
     font-family: "Ubuntu";
     font-size: 2em;
     color: $main-color;
+
+    transition: all 0.1s linear;
+
+    &:hover {
+      background: red;
+      color: white;
+      font-weight: bold;
+    }
   }
 }
 
