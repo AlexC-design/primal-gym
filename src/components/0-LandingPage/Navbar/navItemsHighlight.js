@@ -6,8 +6,8 @@ const navItemsHighlight = scrollPosition => {
 
     if (section !== null) {
       if (
-        section.offsetTop <= scrollPosition + 100 &&
-        section.offsetTop + section.offsetHeight > scrollPosition + 100
+        section.offsetTop <= scrollPosition  &&
+        section.offsetTop + section.offsetHeight > scrollPosition
       ) {
         link.classList.add("current");
       } else {
