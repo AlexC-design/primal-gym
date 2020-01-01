@@ -24,6 +24,8 @@
 
     .btn-class-join {
       transform: translateY(-150px) scaleY(1);
+
+      transition: transform 0.2s ease-in-out;
     }
 
     .class-schedule-overlay {
@@ -71,6 +73,10 @@
 
   &:hover {
     background-color: red;
+  }
+
+  &:active {
+    background-color: darken(red, 10%);
   }
 }
 

@@ -65,4 +65,8 @@ $max-height: 600px;
     background: red;
     color: white;
   }
+
+  &:active {
+    background-color: darken(red, 10%);
+  }
 }

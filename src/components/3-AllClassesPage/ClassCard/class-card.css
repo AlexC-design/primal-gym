@@ -35,6 +35,10 @@
 .hover-show-button:hover .btn-class-join {
   -webkit-transform: translateY(-150px) scaleY(1);
           transform: translateY(-150px) scaleY(1);
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
 }
 
 .hover-show-button:hover .class-schedule-overlay {
@@ -85,6 +89,10 @@
 
 .btn-class-join:hover {
   background-color: red;
+}
+
+.btn-class-join:active {
+  background-color: #cc0000;
 }
 
 .class-schedule-overlay {

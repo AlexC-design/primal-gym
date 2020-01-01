@@ -90,4 +90,8 @@
   background: red;
   color: white;
 }
+
+.pricing-button:active {
+  background-color: #cc0000;
+}
 /*# sourceMappingURL=pricing-card.css.map */
