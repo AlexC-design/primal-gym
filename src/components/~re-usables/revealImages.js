@@ -1,6 +1,6 @@
 const revealImages = (scrollPosition, sectionContainer, image, scrollOffsetReveal, scrollOffsetHide) => {
   let trainerSections = document.querySelectorAll(sectionContainer);
-  console.log(trainerSections);
+  
   trainerSections.forEach(section => {
     
         //checking if the image is already revealed
