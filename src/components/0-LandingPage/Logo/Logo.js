@@ -6,7 +6,7 @@ const Logo = ({ scrollPosition }) => {
   const [size, setSize] = useState("large");
 
   useEffect(() => {
-    scrollPosition === 0 ? setSize("large") : setSize("small");
+    scrollPosition < 200 ? setSize("large") : setSize("small");
   }, [scrollPosition]);
 
   return (
