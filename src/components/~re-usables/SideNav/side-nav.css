@@ -1,0 +1,36 @@
+.sidenav-container {
+  position: fixed;
+  height: 243px;
+  right: 2%;
+  bottom: calc(50% - 243px / 2);
+  z-index: 8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sidenav-container .home-icon {
+  width: 26px;
+}
+
+.sidenav-container .red-dot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  background-color: red;
+  z-index: 7;
+  -webkit-transition: all 0.2s 0.4s ease-out;
+  transition: all 0.2s 0.4s ease-out;
+}
+/*# sourceMappingURL=side-nav.css.map */

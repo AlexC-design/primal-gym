@@ -7,7 +7,7 @@ const Navbar = ({ scrollPosition }) => {
   useEffect(() => {
     if (scrollPosition < 200) {
       setSize("large");
-    } else if (size != "small") {
+    } else if (size !== "small") {
       setSize("small");
     }
 

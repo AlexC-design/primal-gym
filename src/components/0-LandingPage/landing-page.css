@@ -5,6 +5,7 @@ html {
 body {
   font-family: "Ubuntu";
   margin: 0px;
+  background-color: black;
 }
 
 body button:focus {

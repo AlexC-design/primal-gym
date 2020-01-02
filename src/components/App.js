@@ -5,6 +5,7 @@ import AboutPage from "./2-AboutPage/AboutPage";
 import AllClassesPage from "./3-AllClassesPage/AllClassesPage";
 import TrainersPage from "./4-TrainersPage/TrainersPage";
 import PricingPage from "./5-PricingPage/PricingPage";
+import { SideNav } from "./~re-usables/SideNav/SideNav";
 
 class App extends React.Component {
   state = { scroll: 0 };
@@ -21,7 +22,8 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <>
+        <SideNav scrollPosition={this.state.scroll} />
         <section id="home">
           <LandingPage scrollPosition={this.state.scroll} />
           <ClassesPage scrollPosition={this.state.scroll} />
@@ -30,7 +32,7 @@ class App extends React.Component {
         <AllClassesPage />
         <TrainersPage scrollPosition={this.state.scroll} />
         <PricingPage />
-      </div>
+      </>
     );
   }
 }
