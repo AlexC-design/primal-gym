@@ -8,8 +8,8 @@ export const SideNav = ({ scrollPosition }) => {
 
   const indexToPosition = {
     0: "15",
-    1: "62",
-    2: "114",
+    1: "63",
+    2: "115",
     3: "166",
     4: "218"
   };

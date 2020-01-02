@@ -1,0 +1,13 @@
+.footer {
+  height: 100px;
+  padding: 2em;
+  margin-top: 4em;
+  background-color: #181616;
+  color: #a0a0a0;
+}
+
+.footer .footer-content {
+  max-width: 1800px;
+  margin: auto;
+}
+/*# sourceMappingURL=footer.css.map */
