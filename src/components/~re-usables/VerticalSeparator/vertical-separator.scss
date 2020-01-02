@@ -1,3 +1,5 @@
+@import "../../../scss/mixins.scss";
+
 $max-height: 300px;
 
 .vertical-arrow {
@@ -15,9 +17,19 @@ $max-height: 300px;
   width: 4px;
   padding-bottom: 3em;
   margin: auto;
+
+  @include tablet-landscape {
+    width: 0;
+    height: 0;
+  }
 }
 
 .arrow-vertical-one {
   max-width: 32px;
   margin: auto;
+
+  @include tablet-landscape {
+    width: 0;
+    height: 0;
+  }
 }

@@ -1,30 +1,18 @@
-.class-card-container {
-  position: relative;
-  -webkit-transform-origin: top;
-          transform-origin: top;
-  -webkit-transform: scale(0.7);
-          transform: scale(0.7);
-}
-
-.class-border {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .hover-show-button {
   position: relative;
   text-align: center;
+}
+
+@media (max-width: 1500px) {
+  .hover-show-button {
+    margin: -4em -6em;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hover-show-button {
+    margin: -4em 0;
+  }
 }
 
 .hover-show-button:hover .border-bottom {
@@ -41,17 +29,52 @@
   transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
 }
 
-.hover-show-button:hover .class-schedule-overlay {
+.hover-show-button:hover .class-card-container .class-border .class-schedule-overlay {
   opacity: 100%;
 }
 
-.hover-show-button .class-image {
+.hover-show-button .class-card-container {
+  position: relative;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+}
+
+.hover-show-button .class-card-container .class-border {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 757px;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hover-show-button .class-card-container .class-border .class-image {
   position: absolute;
   top: 35px;
   left: 40px;
 }
 
-.border-bottom {
+.hover-show-button .class-card-container .class-border .class-name {
+  color: white;
+  position: absolute;
+  font-size: 4.2em;
+  bottom: 0%;
+  left: 10%;
+}
+
+.hover-show-button .class-card-container .class-border .border-bottom {
   margin-top: -25px;
   width: 750px;
   max-height: 4px;
@@ -61,7 +84,52 @@
   transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
 }
 
-.btn-class-join {
+.hover-show-button .class-card-container .class-border .class-schedule-overlay {
+  color: white;
+  position: absolute;
+  margin-top: 0.5em;
+  width: 100%;
+  height: 100%;
+  opacity: 0%;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  background-color: rgba(0, 0, 0, 0.795);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.hover-show-button .class-card-container .class-border .class-schedule-overlay ul {
+  list-style: none;
+  text-align: right;
+  font-size: 2.2em;
+  line-height: 2em;
+}
+
+.hover-show-button .class-card-container .class-border .class-schedule-overlay .schedule-lists {
+  -ms-flex-item-align: center;
+      align-self: center;
+  justify-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hover-show-button .btn-class-join {
   border: 2px solid red;
   margin: 0 auto;
   border-radius: 5px;
@@ -87,64 +155,11 @@
   transition: background-color 0.2s ease-in-out;
 }
 
-.btn-class-join:hover {
+.hover-show-button .btn-class-join:hover {
   background-color: red;
 }
 
-.btn-class-join:active {
+.hover-show-button .btn-class-join:active {
   background-color: #cc0000;
-}
-
-.class-schedule-overlay {
-  color: white;
-  position: absolute;
-  margin-top: 0.5em;
-  width: 100%;
-  height: 100%;
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
-  background-color: rgba(0, 0, 0, 0.795);
-  opacity: 0%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition: opacity 0.2s ease-in-out;
-  transition: opacity 0.2s ease-in-out;
-}
-
-.class-schedule-overlay ul {
-  list-style: none;
-  text-align: right;
-  font-size: 2.2em;
-  line-height: 2em;
-}
-
-.class-schedule-overlay .schedule-lists {
-  -ms-flex-item-align: center;
-      align-self: center;
-  justify-self: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.class-name {
-  color: white;
-  position: absolute;
-  font-size: 4.2em;
-  bottom: 0%;
-  left: 10%;
 }
 /*# sourceMappingURL=class-card.css.map */

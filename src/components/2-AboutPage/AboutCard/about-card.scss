@@ -1,3 +1,5 @@
+@import '../../../scss/mixins.scss';
+
 $maxWidth: 100px;
 $maxHeight: 70px;
 
@@ -5,12 +7,21 @@ $maxHeight: 70px;
   display: flex;
   align-items: center;
   z-index: 1;
+
+  @include tablet-landscape {
+    justify-content: center;
+    margin-bottom: 2em;
+  }
 }
 
 .about-card-text {
   color: white;
   max-width: 400px;
   z-index: 1;
+
+  @include tablet-landscape {
+    min-width: 400px;
+  }
 }
 
 .icon {

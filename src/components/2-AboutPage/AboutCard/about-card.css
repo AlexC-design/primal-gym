@@ -8,10 +8,25 @@
   z-index: 1;
 }
 
+@media (max-width: 1200px) {
+  .about-card {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 2em;
+  }
+}
+
 .about-card-text {
   color: white;
   max-width: 400px;
   z-index: 1;
+}
+
+@media (max-width: 1200px) {
+  .about-card-text {
+    min-width: 400px;
+  }
 }
 
 .icon {

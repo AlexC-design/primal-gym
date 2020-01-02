@@ -1,9 +1,15 @@
+@import '../../../scss/mixins.scss';
+
 .sidenav-container {
   position: fixed;
   height: 243px;
   right: 2%;
   bottom: calc(50% - 243px / 2);
   z-index: 8;
+
+  @include mobile-landscape {
+    display: none;;
+  }
 
   display: flex;
   flex-direction: column;

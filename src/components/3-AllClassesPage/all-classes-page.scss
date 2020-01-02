@@ -1,3 +1,5 @@
+@import "../../scss/mixins.scss";
+
 .all-classes-container {
   background-color: black;
 }
@@ -9,11 +11,21 @@
 
 .classes-cards-top {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+
+  @include tablet-landscape {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .classes-cards-bottom {
   display: flex;
   justify-content: center;
-}
 
+  @include tablet-landscape {
+    display: flex;
+    flex-direction: column;
+  }
+}

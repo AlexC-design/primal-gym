@@ -1,3 +1,5 @@
+@import "../../scss/mixins.scss";
+
 .pricing-page-container {
   background-color: black;
 }
@@ -7,4 +9,36 @@
   margin: auto;
   display: flex;
   padding: 2em 10%;
+
+  @include desktop-mid {
+    padding: 0 5%;
+  }
+
+  @include tablet-landscape {
+    display: flex;
+    flex-direction: column;
+
+    padding: 0 25%;
+  }
+
+  @include tablet-portrait {
+    display: flex;
+    flex-direction: column;
+
+    padding: 0 20%;
+  }
+
+  @include mobile-landscape {
+    display: flex;
+    flex-direction: column;
+
+    padding: 0 10%;
+  }
+
+  @include mobile-portrait {
+    display: flex;
+    flex-direction: column;
+
+    padding: 0 5%;
+  }
 }

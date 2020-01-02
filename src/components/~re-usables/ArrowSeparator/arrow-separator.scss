@@ -1,6 +1,8 @@
+@import "../../../scss/mixins.scss";
+
 .arrows-container-bg {
   display: flex;
-  background: linear-gradient(#000000, #000000, #00000000,);
+  background: linear-gradient(#000000, #000000, #00000000);
   padding: 1em auto 5em;
 }
 .arrows-container-bg.TRAINERS {
@@ -18,14 +20,16 @@
   img {
     z-index: 1;
   }
-
 }
 
 .arrows {
-  
   position: relative;
   display: flex;
   justify-content: center;
+
+  @include tablet-portrait {
+    align-items: center;
+  }
 }
 
 .arrow {
@@ -36,6 +40,20 @@
 
 .arrow-body {
   max-height: 4px;
+
+  @include tablet-landscape {
+    width: 280px;
+  }
+
+  @include tablet-portrait {
+    width: 200px;
+  }
+}
+
+.arrow-head-1 {
+  @include tablet-landscape {
+    width: 35px;
+  }
 }
 
 .arrow-right {
@@ -52,17 +70,63 @@
     padding: 0;
     margin: 0em;
     text-align: center;
+
+    @include desktop-mid {
+      width: 200px;
+      font-size: 2em;
+    }
+
+    @include tablet-portrait {
+      background-color: white;
+      width: 10px;
+      height: 10px;
+      color: transparent;
+      border-radius: 50%;
+      margin: 0 30px;
+    }
   }
 }
 
 .page-title-empty {
   padding: 0 5em;
+
+  @include tablet-portrait {
+    background-color: white;
+    padding: 0;
+    width: 10px;
+    height: 10px;
+    color: transparent;
+    border-radius: 50%;
+    margin: 0 30px;
+  }
+
+  @include mobile-landscape {
+    background-color: white;
+    padding: 0;
+    width: 10px;
+    height: 10px;
+    color: transparent;
+    border-radius: 50%;
+    margin: 0 30px;
+  }
 }
 
 .empty {
   .arrow {
     .arrow-body {
       width: 600px;
+
+      @include desktop-mid {
+        width: 400px;
+      }
+
+      @include tablet-landscape {
+        width: 300px;
+      }
+
+      @include tablet-portrait {
+        width: 200px;
+      }
     }
   }
 

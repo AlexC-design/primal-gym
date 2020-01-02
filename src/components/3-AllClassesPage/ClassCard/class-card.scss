@@ -1,22 +1,17 @@
-.class-card-container {
-  position: relative;
-  transform-origin: top;
-
-  transform: scale(0.7);
-}
-
-.class-border {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  // padding: 4em;
-}
+@import "../../../scss/mixins.scss";
 
 .hover-show-button {
   position: relative;
   text-align: center;
 
+  @include desktop-mid {
+    margin: -4em -6em;
+  }
+
+  @include tablet-landscape {
+    margin: -4em 0;
+  }
+  
   &:hover {
     .border-bottom {
       transform: translateY(100px);
@@ -28,93 +23,109 @@
       transition: transform 0.2s ease-in-out;
     }
 
-    .class-schedule-overlay {
+    .class-card-container .class-border .class-schedule-overlay {
       opacity: 100%;
     }
   }
 
-  .class-image {
-    position: absolute;
-    top: 35px;
-    left: 40px;
-    // padding: 64px;
+  .class-card-container {
+    position: relative;
+    transform-origin: top;
+
+    transform: scale(0.7);
+
+    .class-border {
+      position: relative;
+      display: flex;
+      width: 757px;
+      margin: auto;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+
+      .class-image {
+        position: absolute;
+        top: 35px;
+        left: 40px;
+      }
+
+      .class-name {
+        color: white;
+        position: absolute;
+        font-size: 4.2em;
+        bottom: 0%;
+        left: 10%;
+      }
+
+      .border-bottom {
+        margin-top: -25px;
+        width: 750px;
+        max-height: 4px;
+
+        transition: transform 0.2s ease-in-out;
+      }
+
+      .class-schedule-overlay {
+        color: white;
+        position: absolute;
+        margin-top: 0.5em;
+        width: 100%;
+        height: 100%;
+        opacity: 0%;
+        transform: scale(0.9);
+        background-color: rgba(0, 0, 0, 0.795);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        transition: opacity 0.2s ease-in-out;
+
+        ul {
+          list-style: none;
+          text-align: right;
+          font-size: 2.2em;
+          line-height: 2em;
+        }
+
+        .schedule-lists {
+          align-self: center;
+          justify-self: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
   }
-}
 
-.border-bottom {
-  margin-top: -25px;
-  width: 750px;
-  max-height: 4px;
+  .btn-class-join {
+    border: 2px solid red;
+    margin: 0 auto;
 
-  transition: transform 0.2s ease-in-out;
-}
+    border-radius: 5px;
+    background: transparent;
+    height: 65px;
+    width: 480px;
+    display: block;
+    float: none;
+    line-height: 40px;
+    text-align: center;
+    font-family: "Ubuntu";
+    font-size: 1.5em;
+    color: white;
 
-.btn-class-join {
-  border: 2px solid red;
-  margin: 0 auto;
+    transform: translateY(-150px) scaleY(0);
+    transform-origin: top;
 
-  border-radius: 5px;
-  background: transparent;
-  height: 65px;
-  width: 480px;
-  display: block;
-  float: none;
-  line-height: 40px;
-  text-align: center;
-  font-family: "Ubuntu";
-  font-size: 1.5em;
-  color: white;
+    transition: transform 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
 
-  transform: translateY(-150px) scaleY(0);
-  transform-origin: top;
+    &:hover {
+      background-color: red;
+    }
 
-  transition: transform 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out;
-
-  &:hover {
-    background-color: red;
+    &:active {
+      background-color: darken(red, 10%);
+    }
   }
-
-  &:active {
-    background-color: darken(red, 10%);
-  }
-}
-
-.class-schedule-overlay {
-  color: white;
-  position: absolute;
-  margin-top: 0.5em;
-  width: 100%;
-  height: 100%;
-  transform: scale(0.9);
-  background-color: rgba(0, 0, 0, 0.795);
-  opacity: 0%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  transition: opacity 0.2s ease-in-out;
-
-  ul {
-    list-style: none;
-    text-align: right;
-    font-size: 2.2em;
-    line-height: 2em;
-  }
-
-  .schedule-lists {
-    align-self: center;
-    justify-self: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-.class-name {
-  color: white;
-  position: absolute;
-  font-size: 4.2em;
-  bottom: 0%;
-  left: 10%;
 }

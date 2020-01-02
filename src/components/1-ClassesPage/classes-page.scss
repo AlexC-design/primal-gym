@@ -1,3 +1,5 @@
+@import "../../scss/mixins.scss";
+
 $maxWidth: 500px;
 
 .classes-container {
@@ -5,6 +7,16 @@ $maxWidth: 500px;
   justify-content: center;
   max-width: 1080px;
   margin: auto;
+
+  .class-image-container {
+    @include tablet-landscape {
+      margin: 0 -5em;
+    }
+
+    @include tablet-portrait {
+      margin: 0 -10em;
+    }
+  }
 }
 
 .glow-container {
@@ -52,6 +64,11 @@ $maxWidth: 500px;
   display: flex;
   justify-content: center;
   color: white;
+
+  @include tablet-portrait {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .text {
@@ -59,10 +76,23 @@ $maxWidth: 500px;
   padding: 0 1em 2.5em;
   z-index: 1;
 
+  @include tablet-landscape {
+    margin: 0 -4em;
+    padding: 0;
+  }
+
+  @include tablet-portrait {
+    padding: 0;
+  }
+
   h1 {
     font-weight: bolder;
     font-size: 3em;
     margin-bottom: 0.8em;
+
+    @include tablet-landscape {
+      font-size: 2em;
+    }
   }
 
   h4 {
@@ -77,11 +107,42 @@ $maxWidth: 500px;
 .right {
   text-align: left;
   padding-left: $maxWidth/5;
+
+  & *:nth-child(n + 2) {
+    @include tablet-landscape {
+      padding-right: 8em;
+    }
+
+    @include tablet-portrait {
+      text-align: center;
+      padding: 0;
+    }
+  }
+
+  @include tablet-portrait {
+    text-align: center;
+    padding: 0;
+  }
 }
 
 .left {
   text-align: right;
   padding-right: $maxWidth/5;
+
+  & *:nth-child(n + 2) {
+    @include tablet-landscape {
+      padding-left: 8em;
+    }
+    @include tablet-portrait {
+      text-align: center;
+      padding: 0;
+    }
+  }
+
+  @include tablet-portrait {
+    text-align: center;
+    padding: 0;
+  }
 }
 
 .text-and-background {

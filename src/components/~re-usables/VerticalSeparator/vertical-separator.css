@@ -22,8 +22,22 @@
   margin: auto;
 }
 
+@media (max-width: 1200px) {
+  .arrow-body-vertical {
+    width: 0;
+    height: 0;
+  }
+}
+
 .arrow-vertical-one {
   max-width: 32px;
   margin: auto;
+}
+
+@media (max-width: 1200px) {
+  .arrow-vertical-one {
+    width: 0;
+    height: 0;
+  }
 }
 /*# sourceMappingURL=vertical-separator.css.map */

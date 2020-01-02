@@ -19,6 +19,12 @@
           align-items: center;
 }
 
+@media (max-width: 600px) {
+  .sidenav-container {
+    display: none;
+  }
+}
+
 .sidenav-container .home-icon {
   width: 26px;
 }

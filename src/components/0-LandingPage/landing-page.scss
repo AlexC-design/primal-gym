@@ -1,3 +1,5 @@
+@import "../../scss//mixins.scss";
+
 $logoWidth: 167px;
 $logoHeight: 114px;
 $logotypeWidth: 310px;
@@ -13,6 +15,7 @@ body {
   font-family: "Ubuntu";
   margin: 0px;
   background-color: black;
+  overflow-x: hidden;
 
   button {
     &:focus {
@@ -155,6 +158,7 @@ body {
 
   ul {
     display: flex;
+    min-width: 500px;
     justify-content: space-between;
     width: 35%;
     padding: 1em;
@@ -226,12 +230,20 @@ body {
 .landing-page {
   background-image: url("../../assets/images/landing-bg.jpg");
   background-repeat: no-repeat;
-  // background-attachment: fixed;
   background-position: center;
   background-size: 90% auto;
   margin: auto;
   height: 100vh;
   background-color: black;
+
+  @include tablet-portrait {
+    background-size: 140% auto;
+  }
+
+  @include mobile-landscape {
+    background-size: 400% auto;
+    background-position: fixed;
+  }
 
   h1 {
     text-align: center;
@@ -296,8 +308,6 @@ body {
 
 .logo-small {
   position: fixed;
-  // top: 1px;
-  // left: 0px;
   mix-blend-mode: screen;
   z-index: 9;
 
@@ -306,7 +316,7 @@ body {
     width: 25%;
   }
 
-  animation: slide 0.2s ease-out;
+  animation: slide 0.2s ease-out forwards;
 
   @keyframes slide {
     from {
@@ -315,7 +325,7 @@ body {
     }
     to {
       top: 1px;
-      left: 0px;
+      left: 5%;
     }
   }
 }

@@ -1,3 +1,5 @@
+@import "../../scss/mixins.scss";
+
 .about-page-container {
   // height: 100vh;
   background-color: black;
@@ -9,12 +11,24 @@
   display: flex;
   justify-content: center;
   z-index: 1;
+
+  @include tablet-landscape {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .about-page-background {
   display: flex;
   position: absolute;
   z-index: 0;
+
+  @include tablet-landscape {
+    margin: auto;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+  }
 
   img {
     padding: 0 5em;
