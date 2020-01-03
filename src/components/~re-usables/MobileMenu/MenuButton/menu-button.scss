@@ -1,5 +1,7 @@
+@import "../../../../scss/mixins.scss";
+
 .menu-button {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-around;
   position: fixed;
@@ -9,7 +11,11 @@
   left: 5%;
   z-index: 11;
 
-  &.cross {
+  @include tablet-portrait {
+    display: flex;
+  }
+
+  &.open {
     justify-content: center;
   }
 
@@ -30,15 +36,21 @@
     transition: all 0.4s ease-out;
   }
 
-  &.cross {
+  &.open {
     .line {
       &.first {
+        position: absolute;
+        width: 45px;
         transform: rotate(405deg);
+
+        transition: all 0.4s ease-in;
       }
       &.second {
         transform: translateX(-200px);
       }
       &.third {
+        position: absolute;
+        width: 45px;
         transform: rotate(-405deg);
       }
     }

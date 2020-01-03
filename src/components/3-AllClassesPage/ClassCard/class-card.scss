@@ -12,6 +12,10 @@
     margin: -4em 0;
   }
 
+  @include tablet-portrait {
+    margin: -4em -4em;
+  }
+
   &:hover {
     .border-bottom {
       transform: translateY(100px);
@@ -35,7 +39,7 @@
     transform: scale(0.7);
 
     @include tablet-portrait {
-      width: 408px;
+      // width: 408px;
     }
 
     .class-border {

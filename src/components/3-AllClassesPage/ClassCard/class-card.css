@@ -15,6 +15,12 @@
   }
 }
 
+@media (max-width: 900px) {
+  .hover-show-button {
+    margin: -4em -4em;
+  }
+}
+
 .hover-show-button:hover .border-bottom {
   -webkit-transform: translateY(100px);
           transform: translateY(100px);
@@ -39,12 +45,6 @@
           transform-origin: top;
   -webkit-transform: scale(0.7);
           transform: scale(0.7);
-}
-
-@media (max-width: 900px) {
-  .hover-show-button .class-card-container {
-    width: 408px;
-  }
 }
 
 .hover-show-button .class-card-container .class-border {
