@@ -11,7 +11,7 @@
   @include tablet-landscape {
     margin: -4em 0;
   }
-  
+
   &:hover {
     .border-bottom {
       transform: translateY(100px);
@@ -33,6 +33,10 @@
     transform-origin: top;
 
     transform: scale(0.7);
+
+    @include tablet-portrait {
+      width: 408px;
+    }
 
     .class-border {
       position: relative;

@@ -77,6 +77,12 @@ body button:focus {
   transition: all 0.2s ease-in-out;
 }
 
+@media (max-width: 900px) {
+  .large ul {
+    display: none;
+  }
+}
+
 .large ul li {
   list-style-type: none;
 }
@@ -148,6 +154,20 @@ body button:focus {
   color: #ff0000;
 }
 
+@media (max-width: 900px) {
+  .large .btn-login {
+    margin-top: 30px;
+    margin-left: 40%;
+  }
+}
+
+@media (max-width: 600px) {
+  .large .btn-login {
+    margin-top: 30px;
+    margin-left: 20%;
+  }
+}
+
 .small {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -179,6 +199,19 @@ body button:focus {
   font-size: 1em;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+}
+
+@media (max-width: 1200px) {
+  .small ul {
+    width: 20%;
+    min-width: 400px;
+  }
+}
+
+@media (max-width: 900px) {
+  .small ul {
+    display: none;
+  }
 }
 
 .small ul li {
@@ -237,6 +270,12 @@ body button:focus {
   transition: all 0.2s ease-in-out;
 }
 
+@media (max-width: 1500px) {
+  .small .flex-eq {
+    padding: 0 40vw 0 0;
+  }
+}
+
 .small .btn-login {
   background: url("../../assets/images/user-icon.svg");
   background-repeat: no-repeat;
@@ -247,6 +286,13 @@ body button:focus {
   height: auto;
   margin: 0 10px;
   padding-right: 100px;
+}
+
+@media (max-width: 900px) {
+  .small .btn-login {
+    margin-top: 20px;
+    height: 50px;
+  }
 }
 
 .landing-page {
@@ -282,24 +328,34 @@ body button:focus {
 }
 
 .landing-page .btn-join-main {
-  margin: 1.2em auto;
-  border-radius: 0.2em;
+  display: block;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: transparent;
-  height: 90px;
-  line-height: 40px;
   border: 2px solid #ff0000;
-  display: block;
-  float: none;
-  text-align: center;
+  border-radius: 0.2em;
   width: 620px;
+  height: 90px;
+  margin: 1.2em auto;
+  background: transparent;
+  color: #ff0000;
+  text-align: center;
   font-family: "Ubuntu";
   font-size: 2em;
-  color: #ff0000;
   -webkit-transition: all 0.1s linear;
   transition: all 0.1s linear;
+}
+
+@media (max-width: 900px) {
+  .landing-page .btn-join-main {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 600px) {
+  .landing-page .btn-join-main {
+    max-width: 300px;
+  }
 }
 
 .landing-page .btn-join-main:hover {
@@ -342,6 +398,12 @@ body button:focus {
   z-index: 9;
   -webkit-animation: slide 0.2s ease-out forwards;
           animation: slide 0.2s ease-out forwards;
+}
+
+@media (max-width: 900px) {
+  .logo-small {
+    display: none;
+  }
 }
 
 .logo-small img {
