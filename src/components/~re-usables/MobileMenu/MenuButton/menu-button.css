@@ -1,0 +1,56 @@
+.menu-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: fixed;
+  height: 35px;
+  width: 45px;
+  top: 35px;
+  left: 5%;
+  z-index: 11;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+
+.menu-button.cross {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu-button.small {
+  top: 10px;
+  height: 30px;
+  width: 40px;
+}
+
+.menu-button .line {
+  height: 4px;
+  min-height: 4px;
+  background-color: white;
+  border-radius: 5px;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+
+.menu-button.cross .line.first {
+  -webkit-transform: rotate(405deg);
+          transform: rotate(405deg);
+}
+
+.menu-button.cross .line.second {
+  -webkit-transform: translateX(-200px);
+          transform: translateX(-200px);
+}
+
+.menu-button.cross .line.third {
+  -webkit-transform: rotate(-405deg);
+          transform: rotate(-405deg);
+}
+/*# sourceMappingURL=menu-button.css.map */

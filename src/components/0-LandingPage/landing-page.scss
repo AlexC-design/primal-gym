@@ -150,7 +150,7 @@ body {
       margin-left: 40%;
     }
 
-    @include mobile-landscape{
+    @include mobile-landscape {
       margin-top: 30px;
       margin-left: 20%;
     }
@@ -251,7 +251,6 @@ body {
     padding-right: 100px;
 
     @include tablet-portrait {
-      margin-top: 20px;
       height: 50px;
     }
   }

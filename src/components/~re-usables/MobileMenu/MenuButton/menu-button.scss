@@ -1,0 +1,46 @@
+.menu-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: fixed;
+  height: 35px;
+  width: 45px;
+  top: 35px;
+  left: 5%;
+  z-index: 11;
+
+  &.cross {
+    justify-content: center;
+  }
+
+  transition: all 0.4s ease-out;
+
+  &.small {
+    top: 10px;
+    height: 30px;
+    width: 40px;
+  }
+
+  .line {
+    height: 4px;
+    min-height: 4px;
+    background-color: white;
+    border-radius: 5px;
+
+    transition: all 0.4s ease-out;
+  }
+
+  &.cross {
+    .line {
+      &.first {
+        transform: rotate(405deg);
+      }
+      &.second {
+        transform: translateX(-200px);
+      }
+      &.third {
+        transform: rotate(-405deg);
+      }
+    }
+  }
+}

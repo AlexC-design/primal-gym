@@ -290,7 +290,6 @@ body button:focus {
 
 @media (max-width: 900px) {
   .small .btn-login {
-    margin-top: 20px;
     height: 50px;
   }
 }
