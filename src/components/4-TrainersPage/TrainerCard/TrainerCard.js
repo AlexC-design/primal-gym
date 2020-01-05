@@ -21,7 +21,7 @@ const TrainerCard = ({ trainerNumber }) => {
               <div className="trainer-image">
                 <img
                   src={trainersList[trainerNumber]}
-                  alt={`trainer-image-${trainerNumber}`}
+                  alt={`trainer-${trainerNumber}`}
                 />
               </div>
               {renderTrainerInfo(trainerNumber)}
@@ -49,7 +49,7 @@ const TrainerCard = ({ trainerNumber }) => {
               <div className="trainer-image reversed">
                 <img
                   src={trainersList[trainerNumber]}
-                  alt={`trainer-image-${trainerNumber}`}
+                  alt={`trainer-${trainerNumber}`}
                 />
               </div>
               {renderTrainerInfo(trainerNumber)}
