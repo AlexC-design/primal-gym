@@ -72,9 +72,28 @@
   }
 }
 
+@media (max-width: 600px) {
+  .arrow-body {
+    width: 100px;
+    height: 2px;
+  }
+}
+
 @media (max-width: 1200px) {
   .arrow-head-1 {
     width: 35px;
+  }
+}
+
+@media (max-width: 900px) {
+  .arrow-head-1 {
+    width: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .arrow-head-1 {
+    width: 20px;
   }
 }
 
@@ -157,6 +176,12 @@
 @media (max-width: 900px) {
   .empty .arrow .arrow-body {
     width: 200px;
+  }
+}
+
+@media (max-width: 600px) {
+  .empty .arrow .arrow-body {
+    width: 100px;
   }
 }
 

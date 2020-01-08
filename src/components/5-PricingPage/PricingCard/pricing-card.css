@@ -52,8 +52,22 @@
   text-align: left;
 }
 
+@media (max-width: 600px) {
+  .pricing-card-container .pricing-card-info-container .pricing-card-subtitle {
+    padding: 0 1em;
+    font-size: 1em;
+    text-align: center;
+  }
+}
+
 .pricing-card-container .pricing-card-info-container .pricing-card-perks {
   padding: 0 2.5em;
+}
+
+@media (max-width: 600px) {
+  .pricing-card-container .pricing-card-info-container .pricing-card-perks {
+    padding: 0 1em;
+  }
 }
 
 .pricing-card-container .pricing-card-info-container .pricing-card-perks li {
@@ -83,6 +97,14 @@
           flex: 1;
   -webkit-transition: all 0.1s ease-out;
   transition: all 0.1s ease-out;
+}
+
+@media (max-width: 600px) {
+  .pricing-button {
+    font-size: 1em;
+    min-height: 5%;
+    min-width: 5%;
+  }
 }
 
 .pricing-button:hover {

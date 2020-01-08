@@ -14,7 +14,20 @@ $maxWidth: 500px;
     }
 
     @include tablet-portrait {
-      margin: 0 -10em;
+      margin: 0;
+      max-width: 400px;
+
+      img {
+        max-width: 400px;
+      }
+    }
+    @include mobile-landscape {
+      margin: 0 -5.5em;
+      max-width: 300px;
+
+      img {
+        max-width: 300px;
+      }
     }
   }
 }
@@ -24,6 +37,14 @@ $maxWidth: 500px;
   position: absolute;
   max-width: 1080px;
   margin: auto;
+
+  @include tablet-portrait {
+    max-width: 900px;
+  }
+
+  @include mobile-landscape {
+    max-width: 600px;
+  }
 }
 
 .glow-men {
@@ -31,6 +52,11 @@ $maxWidth: 500px;
   height: $maxWidth;
   background: radial-gradient(#fdc660, #ff801700, #ff801700);
   mix-blend-mode: overlay;
+
+  @include tablet-portrait {
+    width: calc($maxWidth * 0.5);
+    height: calc($maxWidth * 0.5);
+  }
 }
 
 .glow-women {
@@ -38,6 +64,11 @@ $maxWidth: 500px;
   height: $maxWidth;
   background: radial-gradient(#4decf1, #17f0ff00, #17b6ff00);
   mix-blend-mode: overlay;
+
+  @include tablet-portrait {
+    width: calc($maxWidth * 0.5);
+    height: calc($maxWidth * 0.5);
+  }
 }
 
 .lower-shadow {
@@ -47,6 +78,14 @@ $maxWidth: 500px;
   height: $maxWidth + 50px;
   background: linear-gradient(#00000000, #00000000, #000000);
   z-index: 2;
+
+  @include tablet-portrait {
+    height: 370px;
+  }
+
+  @include mobile-landscape {
+    height: 273px;
+  }
 }
 
 .higher-shadow {

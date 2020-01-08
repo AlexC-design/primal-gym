@@ -1,4 +1,4 @@
-@import '../../../scss/mixins.scss';
+@import "../../../scss/mixins.scss";
 
 $maxWidth: 100px;
 $maxHeight: 70px;
@@ -12,21 +12,43 @@ $maxHeight: 70px;
     justify-content: center;
     margin-bottom: 2em;
   }
-}
 
-.about-card-text {
-  color: white;
-  max-width: 400px;
-  z-index: 1;
-
-  @include tablet-landscape {
-    min-width: 400px;
+  @include mobile-landscape {
+    margin: 1em 2em;
+    padding: 0 5em;
   }
-}
 
-.icon {
-  padding: 0 3em;
-  width: $maxWidth;
-  height: $maxHeight;
-  z-index: 1;
+  .about-card-text {
+    color: white;
+    max-width: 400px;
+    z-index: 1;
+
+    @include tablet-landscape {
+      min-width: 400px;
+      p {
+        padding-right: 40px;
+      }
+    }
+
+    @include mobile-landscape {
+      min-width: 200px;
+      font-size: 0.7em;
+      p {
+        padding-right: 50px;
+      }
+    }
+  }
+
+  .icon {
+    padding: 0 3em;
+    width: $maxWidth;
+    height: $maxHeight;
+    z-index: 1;
+
+    @include mobile-landscape {
+      padding: 0 1.5em;
+      width: calc(#{$maxWidth} * 0.6);
+      height: calc(#{$maxHeight} * 0.6);
+    }
+  }
 }

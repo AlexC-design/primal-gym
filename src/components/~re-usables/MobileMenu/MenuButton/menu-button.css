@@ -21,6 +21,9 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    top: 10px;
+    height: 30px;
+    width: 35px;
   }
 }
 
@@ -50,8 +53,6 @@
   width: 45px;
   -webkit-transform: rotate(405deg);
           transform: rotate(405deg);
-  -webkit-transition: all 0.4s ease-in;
-  transition: all 0.4s ease-in;
 }
 
 .menu-button.open .line.second {

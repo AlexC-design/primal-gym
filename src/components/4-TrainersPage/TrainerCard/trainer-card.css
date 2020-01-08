@@ -167,8 +167,24 @@
           align-items: center;
 }
 
+@media (max-width: 900px) {
+  .trainer-name {
+    font-size: 0.8em;
+  }
+}
+
 .trainer-name * {
   padding: 0 20px;
+}
+
+@media (max-width: 600px) {
+  .trainer-name img {
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    padding: 0;
+    background-color: white;
+  }
 }
 
 .trainer-specialization {
@@ -181,10 +197,26 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
 }
 
 .trainer-specialization * {
   padding: 0 20px;
+}
+
+@media (max-width: 1200px) {
+  .trainer-specialization {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 600px) {
+  .trainer-specialization {
+    font-size: 0.8em;
+  }
+  .trainer-specialization img {
+    padding: 0;
+  }
 }
 
 .arrow-small-flipped {

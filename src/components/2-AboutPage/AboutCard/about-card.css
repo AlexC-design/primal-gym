@@ -17,22 +17,50 @@
   }
 }
 
-.about-card-text {
+@media (max-width: 600px) {
+  .about-card {
+    margin: 1em 2em;
+    padding: 0 5em;
+  }
+}
+
+.about-card .about-card-text {
   color: white;
   max-width: 400px;
   z-index: 1;
 }
 
 @media (max-width: 1200px) {
-  .about-card-text {
+  .about-card .about-card-text {
     min-width: 400px;
+  }
+  .about-card .about-card-text p {
+    padding-right: 40px;
   }
 }
 
-.icon {
+@media (max-width: 600px) {
+  .about-card .about-card-text {
+    min-width: 200px;
+    font-size: 0.7em;
+  }
+  .about-card .about-card-text p {
+    padding-right: 50px;
+  }
+}
+
+.about-card .icon {
   padding: 0 3em;
   width: 100px;
   height: 70px;
   z-index: 1;
+}
+
+@media (max-width: 600px) {
+  .about-card .icon {
+    padding: 0 1.5em;
+    width: calc(100px * 0.6);
+    height: calc(70px * 0.6);
+  }
 }
 /*# sourceMappingURL=about-card.css.map */

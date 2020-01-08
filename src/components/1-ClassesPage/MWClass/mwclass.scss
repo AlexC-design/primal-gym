@@ -1,31 +1,31 @@
+@import "../../../scss/mixins.scss";
+
 $max-width: 600px;
 
 .classes-container {
+  .class-image-container {
+    position: relative;
+  }
 
-}
+  .men-main {
+    max-width: $max-width;
+    position: absolute;
+    z-index: 1;
+  }
 
-.class-image-container {
-  position: relative;
-}
+  .men-debris {
+    max-width: $max-width;
+    mix-blend-mode: screen;
+  }
 
-.men-main {
-  max-width: $max-width;
-  position: absolute;
-  z-index: 1;
-}
+  .women-main {
+    max-width: $max-width;
+    position: absolute;
+    z-index: 1;
+  }
 
-.men-debris {
-  max-width: $max-width;
-  mix-blend-mode: screen;
-}
-
-.women-main {
-  max-width: $max-width;
-  position: absolute;
-  z-index: 1;
-}
-
-.women-debris {
-  max-width: $max-width;
-  mix-blend-mode: screen;
+  .women-debris {
+    max-width: $max-width;
+    mix-blend-mode: screen;
+  }
 }

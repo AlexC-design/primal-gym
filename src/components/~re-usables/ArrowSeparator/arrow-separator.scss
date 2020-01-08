@@ -48,11 +48,24 @@
   @include tablet-portrait {
     width: 200px;
   }
+
+  @include mobile-landscape {
+    width: 100px;
+    height: 2px;
+  }
 }
 
 .arrow-head-1 {
   @include tablet-landscape {
     width: 35px;
+  }
+
+  @include tablet-portrait{
+    width: 30px;
+  }
+
+  @include mobile-landscape {
+    width: 20px;
   }
 }
 
@@ -127,6 +140,10 @@
       @include tablet-portrait {
         width: 200px;
       }
+      @include mobile-landscape{
+        width: 100px;
+      }
+      
     }
   }
 

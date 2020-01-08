@@ -1,25 +1,25 @@
-.class-image-container {
+.classes-container .class-image-container {
   position: relative;
 }
 
-.men-main {
+.classes-container .men-main {
   max-width: 600px;
   position: absolute;
   z-index: 1;
 }
 
-.men-debris {
+.classes-container .men-debris {
   max-width: 600px;
   mix-blend-mode: screen;
 }
 
-.women-main {
+.classes-container .women-main {
   max-width: 600px;
   position: absolute;
   z-index: 1;
 }
 
-.women-debris {
+.classes-container .women-debris {
   max-width: 600px;
   mix-blend-mode: screen;
 }

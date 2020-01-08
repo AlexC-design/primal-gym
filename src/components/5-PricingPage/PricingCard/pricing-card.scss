@@ -1,3 +1,5 @@
+@import "../../../scss/mixins.scss";
+
 $max-height: 600px;
 
 .pricing-card-container {
@@ -19,19 +21,29 @@ $max-height: 600px;
     flex-direction: column;
     align-items: center;
     flex: 6;
-
+    
     .pricing-card-title {
       margin: 10% 0 10%;
     }
-
+    
     .pricing-card-subtitle {
       margin: 0 0 1em 0;
-
+      
       font-size: 1.2em;
       text-align: left;
+      
+      @include mobile-landscape {
+        padding: 0 1em;
+        font-size: 1em;
+        text-align: center;
+      }
     }
 
     .pricing-card-perks {
+      @include mobile-landscape {
+        padding: 0 1em;
+      }
+
       padding: 0 2.5em;
       li {
         font-size: 1em;
@@ -59,6 +71,12 @@ $max-height: 600px;
   justify-self: flex-end;
   flex: 1;
   transition: all 0.1s ease-out;
+
+  @include mobile-landscape {
+    font-size: 1em;
+    min-height: 5%;
+    min-width: 5%;
+  }
 
   &:hover {
     font-weight: bolder;

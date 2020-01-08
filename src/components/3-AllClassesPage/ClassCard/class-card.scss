@@ -13,7 +13,18 @@
   }
 
   @include tablet-portrait {
-    margin: -4em -4em;
+    margin: -4em -10em;
+    transform: scale(0.8);
+  }
+
+  @include mobile-landscape {
+    margin: -7em -20em;
+    transform: scale(0.6);
+  }
+
+  @include mobile-portrait {
+    margin: -10em -20em;
+    transform: scale(0.4);
   }
 
   &:hover {

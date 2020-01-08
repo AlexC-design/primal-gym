@@ -15,7 +15,7 @@ const Navbar = ({ scrollPosition }) => {
   });
 
   return (
-    <div>
+    <>
       <div className={`${size} container`}>
         <div className="flex-eq"></div>
         <ul>
@@ -38,7 +38,7 @@ const Navbar = ({ scrollPosition }) => {
         <button className="btn-login">Log In</button>
       </div>
       <div className={`navbg-${size}`}></div>
-    </div>
+    </>
   );
 };
 

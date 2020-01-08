@@ -110,8 +110,22 @@
   justify-content: flex-start;
   align-items: center;
 
+  @include tablet-portrait {
+    font-size: 0.8em;
+  }
+
   & * {
     padding: 0 20px;
+  }
+
+  img {
+    @include mobile-landscape {
+      width: 10px;
+      height: 10px;
+      border-radius: 50px;
+      padding: 0;
+      background-color: white;
+    }
   }
 }
 
@@ -119,9 +133,22 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  text-align: center;
 
   & * {
     padding: 0 20px;
+  }
+
+  @include tablet-landscape {
+    font-size: 0.8em;
+  }
+
+  @include mobile-landscape {
+    font-size: 0.8em;
+
+    img {
+      padding: 0;
+    }
   }
 }
 
