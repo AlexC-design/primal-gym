@@ -86,6 +86,7 @@
     transition: transform 1s ease-in-out;
 
     @include tablet-landscape {
+      max-width: 300px !important;
       left: calc(50% - 383px / 2);
     }
   }
@@ -166,6 +167,9 @@
   z-index: 2;
 
   @include tablet-landscape {
+    right: calc(50% - 373px / 2 - 3.2em / 2);
+  }
+  @include tablet-portrait {
     right: calc(50% - 373px / 2 - 3.2em / 2);
   }
 

@@ -132,6 +132,7 @@
 
 @media (max-width: 1200px) {
   .trainer-image img {
+    max-width: 300px !important;
     left: calc(50% - 383px / 2);
   }
 }
@@ -235,6 +236,12 @@
 }
 
 @media (max-width: 1200px) {
+  .social-icons-container {
+    right: calc(50% - 373px / 2 - 3.2em / 2);
+  }
+}
+
+@media (max-width: 900px) {
   .social-icons-container {
     right: calc(50% - 373px / 2 - 3.2em / 2);
   }

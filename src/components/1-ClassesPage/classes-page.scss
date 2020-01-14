@@ -54,8 +54,8 @@ $maxWidth: 500px;
   mix-blend-mode: overlay;
 
   @include tablet-portrait {
-    width: calc($maxWidth * 0.5);
-    height: calc($maxWidth * 0.5);
+    width: calc(#{$maxWidth} * 0.5);
+    height: calc(#{$maxWidth} * 0.5);
   }
 }
 
@@ -66,8 +66,8 @@ $maxWidth: 500px;
   mix-blend-mode: overlay;
 
   @include tablet-portrait {
-    width: calc($maxWidth * 0.5);
-    height: calc($maxWidth * 0.5);
+    width: calc(#{$maxWidth} * 0.5);
+    height: calc(#{$maxWidth} * 0.5);
   }
 }
 
@@ -105,8 +105,20 @@ $maxWidth: 500px;
   color: white;
 
   @include tablet-portrait {
+    max-width: 600px;
+
     flex-direction: column;
     align-items: center;
+  }
+
+  @include mobile-landscape {
+    max-width: 150px;
+
+  }
+
+  @include mobile-portrait {
+    font-size: 0.8em;
+    max-width: 100px;
   }
 }
 
