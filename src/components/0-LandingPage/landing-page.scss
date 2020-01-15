@@ -295,6 +295,10 @@ body {
     font-size: 2em;
     color: white;
     font-weight: normal;
+
+    @include tablet-portrait {
+      font-size: 1.5em;
+    }
   }
 
   .btn-join-main {
@@ -318,7 +322,9 @@ body {
     }
 
     @include mobile-landscape {
-      max-width: 300px;
+      font-size: 1em;
+      max-width: 250px;
+      max-height: 50px;
     }
 
     &:hover {
@@ -387,4 +393,8 @@ body {
   position: absolute;
   top: calc(50% - #{$logotypeHeight}/ 2);
   left: calc(50% - #{$logotypeWidth}/ 2);
+
+  @include tablet-portrait {
+    transform: scale(0.8);
+  }
 }

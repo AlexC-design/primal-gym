@@ -340,6 +340,12 @@ body button:focus {
   font-weight: normal;
 }
 
+@media (max-width: 900px) {
+  .landing-page h1 {
+    font-size: 1.5em;
+  }
+}
+
 .landing-page .btn-join-main {
   display: block;
   -webkit-box-pack: center;
@@ -367,7 +373,9 @@ body button:focus {
 
 @media (max-width: 600px) {
   .landing-page .btn-join-main {
-    max-width: 300px;
+    font-size: 1em;
+    max-width: 250px;
+    max-height: 50px;
   }
 }
 
@@ -450,5 +458,12 @@ body button:focus {
   position: absolute;
   top: calc(50% - 125px/ 2);
   left: calc(50% - 310px/ 2);
+}
+
+@media (max-width: 900px) {
+  .logotype {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
 }
 /*# sourceMappingURL=landing-page.css.map */

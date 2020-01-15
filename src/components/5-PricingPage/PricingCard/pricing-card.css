@@ -23,6 +23,12 @@
           justify-content: space-between;
 }
 
+@media (max-width: 600px) {
+  .pricing-card-container {
+    height: calc(600px * 0.7);
+  }
+}
+
 .pricing-card-container .pricing-card-info-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -55,7 +61,7 @@
 @media (max-width: 600px) {
   .pricing-card-container .pricing-card-info-container .pricing-card-subtitle {
     padding: 0 1em;
-    font-size: 1em;
+    font-size: 0.8em;
     text-align: center;
   }
 }
@@ -73,6 +79,12 @@
 .pricing-card-container .pricing-card-info-container .pricing-card-perks li {
   font-size: 1em;
   margin: 0em 1em 1em;
+}
+
+@media (max-width: 600px) {
+  .pricing-card-container .pricing-card-info-container .pricing-card-perks li {
+    font-size: 0.8em;
+  }
 }
 
 .pricing-card-container .pricing-card-info-container .pricing-card-price {

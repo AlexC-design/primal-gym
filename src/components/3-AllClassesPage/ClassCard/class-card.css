@@ -54,7 +54,7 @@
 }
 
 .hover-show-button:hover .class-card-container .class-border .class-schedule-overlay {
-  opacity: 100%;
+  opacity: 1;
 }
 
 .hover-show-button .class-card-container {
@@ -114,7 +114,7 @@
   margin-top: 0.5em;
   width: 100%;
   height: 100%;
-  opacity: 0%;
+  opacity: 0;
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
   background-color: rgba(0, 0, 0, 0.795);
