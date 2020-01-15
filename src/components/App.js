@@ -23,7 +23,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <>
+      <div className="mobile-wrapper">
         <SideNav scrollPosition={this.state.scroll} />
         <section id="home">
           <LandingPage scrollPosition={this.state.scroll} />
@@ -34,7 +34,7 @@ class App extends React.Component {
         <TrainersPage scrollPosition={this.state.scroll} />
         <PricingPage />
         <Footer />
-      </>
+      </div>
     );
   }
 }

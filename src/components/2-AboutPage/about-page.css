@@ -46,6 +46,9 @@
         -ms-flex-align: center;
             align-items: center;
   }
+  .about-page-background img {
+    display: none;
+  }
 }
 
 .about-page-background img {

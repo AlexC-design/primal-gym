@@ -40,6 +40,7 @@ $maxWidth: 500px;
 
   @include tablet-portrait {
     max-width: 900px;
+    display: none;
   }
 
   @include mobile-landscape {

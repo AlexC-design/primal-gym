@@ -47,6 +47,7 @@
 @media (max-width: 900px) {
   .glow-container {
     max-width: 900px;
+    display: none;
   }
 }
 

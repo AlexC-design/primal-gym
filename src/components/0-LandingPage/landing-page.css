@@ -10,6 +10,10 @@ body {
   overflow-x: hidden;
 }
 
+body .mobile-wrapper {
+  overflow-x: hidden;
+}
+
 body button:focus {
   outline: none;
 }
