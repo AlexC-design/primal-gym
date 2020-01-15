@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/primal-gym/static/css/main.49f446ce.chunk.css",
-    "main.js": "/primal-gym/static/js/main.df0d3d93.chunk.js",
-    "main.js.map": "/primal-gym/static/js/main.df0d3d93.chunk.js.map",
+    "main.css": "/primal-gym/static/css/main.11bf67cf.chunk.css",
+    "main.js": "/primal-gym/static/js/main.e63f0f19.chunk.js",
+    "main.js.map": "/primal-gym/static/js/main.e63f0f19.chunk.js.map",
     "runtime-main.js": "/primal-gym/static/js/runtime-main.5f79a621.js",
     "runtime-main.js.map": "/primal-gym/static/js/runtime-main.5f79a621.js.map",
     "static/js/2.bff4aace.chunk.js": "/primal-gym/static/js/2.bff4aace.chunk.js",
     "static/js/2.bff4aace.chunk.js.map": "/primal-gym/static/js/2.bff4aace.chunk.js.map",
     "index.html": "/primal-gym/index.html",
-    "precache-manifest.001db85dd92892871550725cc3d76ff9.js": "/primal-gym/precache-manifest.001db85dd92892871550725cc3d76ff9.js",
+    "precache-manifest.a61fd7c39b71b173f7e19264a2945521.js": "/primal-gym/precache-manifest.a61fd7c39b71b173f7e19264a2945521.js",
     "service-worker.js": "/primal-gym/service-worker.js",
-    "static/css/main.49f446ce.chunk.css.map": "/primal-gym/static/css/main.49f446ce.chunk.css.map",
+    "static/css/main.11bf67cf.chunk.css.map": "/primal-gym/static/css/main.11bf67cf.chunk.css.map",
     "static/media/about-us-bg.jpg": "/primal-gym/static/media/about-us-bg.2f1e5471.jpg",
     "static/media/arrow-body-vertical.png": "/primal-gym/static/media/arrow-body-vertical.8b0ca964.png",
     "static/media/arrow-body.png": "/primal-gym/static/media/arrow-body.d8ac37e1.png",
@@ -40,7 +40,7 @@
   "entrypoints": [
     "static/js/runtime-main.5f79a621.js",
     "static/js/2.bff4aace.chunk.js",
-    "static/css/main.49f446ce.chunk.css",
-    "static/js/main.df0d3d93.chunk.js"
+    "static/css/main.11bf67cf.chunk.css",
+    "static/js/main.e63f0f19.chunk.js"
   ]
 }
