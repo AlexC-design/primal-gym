@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ee9890f41b3043a1ff6ddb3da2398051",
+    "revision": "71ecb4f0b5ff78fd58633d40ffd9a5f5",
     "url": "/primal-gym/index.html"
   },
   {
-    "revision": "7f84d82a2274163ed48b",
-    "url": "/primal-gym/static/css/main.a6de0dfd.chunk.css"
+    "revision": "df48b4cceec60b1c69dd",
+    "url": "/primal-gym/static/css/main.87cb8874.chunk.css"
   },
   {
     "revision": "a94dc43c82ba7c696e51",
     "url": "/primal-gym/static/js/2.bff4aace.chunk.js"
   },
   {
-    "revision": "7f84d82a2274163ed48b",
+    "revision": "df48b4cceec60b1c69dd",
     "url": "/primal-gym/static/js/main.e63f0f19.chunk.js"
   },
   {
