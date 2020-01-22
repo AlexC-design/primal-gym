@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "71ecb4f0b5ff78fd58633d40ffd9a5f5",
+    "revision": "a07f7d9133ca29e97588570b6b24474e",
     "url": "/primal-gym/index.html"
   },
   {
