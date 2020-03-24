@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/primal-gym/static/css/main.87cb8874.chunk.css",
+    "main.css": "/primal-gym/static/css/main.94972042.chunk.css",
     "main.js": "/primal-gym/static/js/main.e63f0f19.chunk.js",
     "main.js.map": "/primal-gym/static/js/main.e63f0f19.chunk.js.map",
     "runtime-main.js": "/primal-gym/static/js/runtime-main.5f79a621.js",
@@ -8,9 +8,9 @@
     "static/js/2.bff4aace.chunk.js": "/primal-gym/static/js/2.bff4aace.chunk.js",
     "static/js/2.bff4aace.chunk.js.map": "/primal-gym/static/js/2.bff4aace.chunk.js.map",
     "index.html": "/primal-gym/index.html",
-    "precache-manifest.adef9b97df37187935b0af0ecae3e371.js": "/primal-gym/precache-manifest.adef9b97df37187935b0af0ecae3e371.js",
+    "precache-manifest.d994366e1551714871106e2c1a2c1567.js": "/primal-gym/precache-manifest.d994366e1551714871106e2c1a2c1567.js",
     "service-worker.js": "/primal-gym/service-worker.js",
-    "static/css/main.87cb8874.chunk.css.map": "/primal-gym/static/css/main.87cb8874.chunk.css.map",
+    "static/css/main.94972042.chunk.css.map": "/primal-gym/static/css/main.94972042.chunk.css.map",
     "static/media/about-us-bg.jpg": "/primal-gym/static/media/about-us-bg.2f1e5471.jpg",
     "static/media/arrow-body-vertical.png": "/primal-gym/static/media/arrow-body-vertical.8b0ca964.png",
     "static/media/arrow-body.png": "/primal-gym/static/media/arrow-body.d8ac37e1.png",
@@ -40,7 +40,7 @@
   "entrypoints": [
     "static/js/runtime-main.5f79a621.js",
     "static/js/2.bff4aace.chunk.js",
-    "static/css/main.87cb8874.chunk.css",
+    "static/css/main.94972042.chunk.css",
     "static/js/main.e63f0f19.chunk.js"
   ]
 }
