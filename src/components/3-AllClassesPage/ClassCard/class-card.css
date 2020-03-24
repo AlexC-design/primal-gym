@@ -164,7 +164,7 @@
   float: none;
   line-height: 40px;
   text-align: center;
-  font-family: "Ubuntu";
+  font-family: "Ubuntu", sans-serif;
   font-size: 1.5em;
   color: white;
   -webkit-transform: translateY(-150px) scaleY(0);
